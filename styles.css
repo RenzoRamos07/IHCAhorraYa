@@ -46,6 +46,24 @@ nav a{
     margin: 0px 100px
 }
 
+.container {
+    display: flex;
+    gap:70px;
+    width: 80%;
+    margin:auto;
+  }
+
+.box {
+    float: left;
+    flex: 1;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 25px;
+    border: 7px solid #ad54be;
+    border-radius: 10px;
+    background-color: rgb(231, 140, 243) ;
+}
+
 @media (max-width:900px){
     header{
         
@@ -117,7 +135,7 @@ nav a{
 
 .hero-text h2{
     width: 450px;
-    font-size: 50px;
+    font-size: 55px;
 }
 
 .hero-text p{
@@ -142,9 +160,90 @@ nav a{
 .imgBox{
     margin-left: 20%;
 }
-
-.contenedor2{
-    width: auto;
-    height: 300px;
+.hero-fondo2{
+    position: relative;
     background-color: #d2bcff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120%;
+    backdrop-filter: opacity(10px);
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+
+    padding: 0, 19%;
 }
+.imagen2{
+    width: 600px;
+    height: 600;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.hero-text2{
+    padding: 5px 10%;
+    margin-left: 5%;
+}
+.hero-text2 h2{
+    width: 450px;
+    font-size: 63px;
+}
+
+.hero-text2 p{
+    font-weight: 300;
+    width: 380px;
+    font-size: 25px;
+    background-color: #a856ce;
+    border: 5px solid #942ec4; 
+    padding: 20px; 
+    border-radius: 20px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.hero-image3
+{   
+    
+    position: relative;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url("imagenes/fondo2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120%;
+     
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    color: #ffff;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 0, 19%;
+    
+}
+
+.imagen_logo{
+    position: center;
+    width: 400px;
+    height: 400px;
+    display: block;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imagen_cuadro{
+    position: center;
+    width: 100px;
+    height: 210px;
+    display: block;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
